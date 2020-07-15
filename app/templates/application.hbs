@@ -1,3 +1,16 @@
-<h2 id="title">Welcome to Ember</h2>
+<div id="my-application">
+  {{!--
+    @NOTE Be sure "Pause on exceptions" is on before uncommenting these elements
+  --}}
 
-{{outlet}}
+  {{!-- <div {{did-insert this._setupResizerController}}>
+    {{this.someProp}} {{! doesn't matter where this is in template }}
+  </div> --}}
+
+  {{!-- <MyComponent /> --}}
+
+  {{!--
+    As long as this is after ResizeObserver setup, it causes the issue.
+  --}}
+  {{hlpr "string"}}
+</div>
